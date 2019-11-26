@@ -41,7 +41,7 @@ function createAndStart(tab, bStartSelectImmediate) {
 			type: 'popup',
 			focused: true
 		}, function (fnWindow) {
-			sOurWindowId = fnWindow.id;
+			// sOurWindowId = fnWindow.id;
 			if (bInitialized === false) {
 				bInitialized = true;
 				chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
